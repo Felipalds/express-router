@@ -4,7 +4,7 @@ const router = express.Router()
 const path = require('path')
 
 router.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname, 'src', 'views', 'produtos', 'produtos.html'))
+    return res.status(200).json({"message": "ok"})
 })
 
 
