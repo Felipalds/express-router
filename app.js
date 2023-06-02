@@ -3,7 +3,7 @@ const app = express()
 const router = express.Router()
 const path = require('path')
 
-router.get('/', (req, res, next) => {
+app.get('/', (req, res, next) => {
     return res.status(200).json({"message": "ok"})
 })
 
